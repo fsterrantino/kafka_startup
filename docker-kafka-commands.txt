@@ -1,0 +1,5 @@
+docker exec -it b0e719d624d92016f2f16d97e5e8df43f40c3b6374361e644d0c5cea7a85b97b kafka-topics.sh --list --bootstrap-server localhost:9092 kafka-topics.sh
+
+docker exec -it b0e719d624d92016f2f16d97e5e8df43f40c3b6374361e644d0c5cea7a85b97b kafka-topics.sh --list --bootstrap-server localhost:9092 --topic user_register
+
+docker exec -it b0e719d624d92016f2f16d97e5e8df43f40c3b6374361e644d0c5cea7a85b97b kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic user_register --from-beginning
